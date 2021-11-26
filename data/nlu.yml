@@ -1,0 +1,151 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Hi there!
+    - Good morning!
+    - good afternoon!
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: tellmeaboutyou
+  examples: |
+    - tell me about you
+    - describe yourself in few words
+    - Can you tell me more about yourself ?
+    - what can you tell me about you?
+    - tell me a little bit about you
+    - How could you describe yourself?
+    - can you introduce yourself ?
+    - about you
+    - presentation
+    - tellmeaboutyou
+- intent: moreaboutyou
+  examples: |
+    - 
+    - moreaboutyou
+- intent: intro
+  examples: |
+    - who are you?
+- intent: experience
+  examples: |
+    - What projects have you worked on as a professional
+    - What have you done in your professional life
+    - What have you done in industry so far
+    - Where have you worked before?
+    - Show me your work experience
+    - Can you tell me about your work experience
+    - experience working
+    - work ex.
+    - work experience
+    - job
+- intent: projects
+  examples: |
+    - Projects
+    - Show me your projects
+    - What are your academic projects
+    - What projects have you done?
+    - project
+- intent: education
+  examples: |
+    - Education Qualifications
+    - Education
+    - What can you say about your Education?
+    - Let me know of your Education
+    - Let me know of your Educational Qualifications
+- intent: skills
+  examples: |
+    - programming languages
+    - which programming language do you know?
+    - show me your skills
+    - which skill set do you acquire?
+    - which skills do you acquire?
+    - skill set
+    - what are your skills?
+    - skills
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - what's your nationality
+- intent: nlu_fallback
+  examples: |
+    - what
+    - what do you know about python

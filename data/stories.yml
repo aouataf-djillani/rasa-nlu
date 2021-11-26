@@ -1,0 +1,30 @@
+version: "2.0"
+stories:
+- story: Story from Conversation ID 888433070d044417afde16ae399febd5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_presentation
+  - intent: tellmeaboutyou
+  - action: utter_aboutyou
+  - action: utter_moreaboutyou
+- story: experience
+  steps:
+  - intent: experience
+  - action: utter_experience1
+  - action: utter_experience2
+  - action: utter_experience3
+- story: education
+  steps:
+  - intent: education
+  - action: utter_education1
+  - action: utter_education2
+  - action: utter_education3
+- story: project
+  steps:
+  - intent: projects
+  - action: utter_projects
+- story: skills
+  steps:
+  - intent: skills
+  - action: utter_skills

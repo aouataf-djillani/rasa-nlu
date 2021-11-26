@@ -1,0 +1,99 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- tellmeaboutyou:
+    use_entities: true
+- moreaboutyou:
+    use_entities: true
+- intro:
+    use_entities: true
+- projects:
+    use_entities: true
+- education:
+    use_entities: true
+- experience:
+    use_entities: true
+- skills:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+- out_of_scope:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_greet:
+  - text: Hi there! Since you are here, I presume you would like to know a bit more about me. Well...You came to the right place!
+  utter_presentation:
+  - buttons:
+    - payload: tellmeaboutyou
+      title: Yes!
+    - payload: comeback
+      title: "No, I'll come back later "
+    text: I'm Aouataf  Djillani, or rather the virtual representation of Aouataf - NLP Engineer with Computational Linguistics and Machine Learning background. Curious to know more?
+  utter_aboutyou:
+  - text: I graduated with a Master's degree in Natural Language Processing and Translation. I chose this path because I’ve always been passionate about both languages and programming.  With a first experience as a Data and language analyst under my belt, I’m looking for a new opportunity to take the next step in my career.
+  utter_moreaboutyou:
+  - text: Not just that though! I’m known for being a detail-oriented, well-organized team player. I never miss deadlines, I’m a good communicator and I can juggle multiple tasks at once.
+  utter_experience1:
+  - text: In 2018 , I joined the data-scientist team at Fortia Financial Solutions as a Data Analyst intern where I thouroughly contributed to improving the performance of machine learning algorithms for Named Entity Recognition, Table of Content Detection and Sentence Boundary Detection. I also managed to improve the quality of dataset by building annotation guidelines, integrating linguistic approaches to machine learning solutions. My contributions during this internship led to a full time position as a Language and Data Analyst at the same company.
+  utter_experience2:
+  - text: I’ve also been lucky enough to work with talented people at Le Cassissium where I managed the translation and localization of their website. On top of that I helped improve the website’s ranking using my search engine optimization skills. Not to mention that I had a great time guiding tours in different languages and marketing their products including the famous Crème de Cassis.
+  utter_experience3:
+  - text: I’m also grateful for all the student that helped pay for my college degree; bakery seller, babysitter, tutor, cleaner, street marketer...You name it.
+  utter_rephrase:
+  - buttons:
+    - payload: experience
+      title: Work Experience💼
+    - payload: education
+      title: ' Education🎓'
+    - payload: projects
+      title: Project👨‍💻
+    - payload: skill
+      title: ' Skills🤹'
+    text: Was your question about any of the following?
+  utter_education1:
+  - text: In 2019 I graduated with a Maîtrise in Natural Language Processing from Sorbonne University
+  utter_education2:
+  - text: In 2017 I got my Master's degree in Computational Linguistics and Translation
+  utter_education3:
+  - text: And you might be surprised to know that my journey at university began with a Bachelor's degree in German Linguistics. Ja Ja! It's fascinating how my passion for languages had led me to NLP
+  utter_projects:
+  - text: Sentiment Analysis , web scraping automatic semantic wiki generation, chatbots...
+  utter_skills:
+  - text: have given me a wealth of skills 🙋 I am sure that some of them if not all could be of some use for you 🤗
+  utter_out_of_scope:
+  - text: Sorry, I can't handle that request.
+actions:
+- utter_experience1
+forms: {}
+e2e_actions: []
